@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JQuery</title>
+  </head>
+  <body>
+    <div id="listes">
+      <ul id="ul1">
+        <li>
+          Element de liste 1
+          <ul id="ul2">
+            <li>Enfant 2</li>
+            <li>Enfant 3</li>
+          </ul>
+        </li>
+        <li>Element de liste 4</li>
+        <li>Element de liste 5</li>
+        <li>Element de liste 6</li>
+      </ul>
+    </div>
+    <script src="./jquery.js"></script>
+    <script>
+      $(function () {
+        //Le code jquery sera insere ici
+        $("#ul2").css("color", "red");
+      });
+    </script>
+  </body>
+</html>
